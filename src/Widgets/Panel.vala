@@ -250,7 +250,7 @@ public class Wingpanel.Widgets.Panel : Gtk.EventBox {
                 break;
             case Indicator.DATETIME:
                 indicator_entry.set_transition_type (Gtk.RevealerTransitionType.SLIDE_DOWN);
-                center_menubar.add (indicator_entry);
+                right_menubar.insert_sorted (indicator_entry);
                 break;
             default:
                 indicator_entry.set_transition_type (Gtk.RevealerTransitionType.SLIDE_LEFT);
